@@ -1,0 +1,19 @@
+sudo: false
+addons:
+  apt:
+    packages:
+      - google-chrome-stable
+
+language: ruby
+rvm:
+- 2.4.1
+script:
+  - bundle exec rspec
+notifications:
+  email:
+    recipients:
+    - chris.ashton@bbc.co.uk
+    on_failure: change
+    on_success: never
+  slack:
+    secure: BgRAqwHabAtIBgtApDjyUiND2SNxd4sHMgq4ffnJ+EoMme6RSUAeK0G6LLyaGAk6YcpCeWRGOccEpzai87R3ckv6uycUVGxFcTvPmCEClakbUelWovVEyVT3hPLWznxJ8pz3EVB2+5aJnAsTg5M2ZnYtk3a5C1mrPS+WKceE/Ls=

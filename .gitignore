@@ -1,0 +1,8 @@
+.bundle/*
+shots/
+shots_chrome/
+shots_history/
+data.txt
+.DS_Store
+*.swp
+Gemfile.lock
